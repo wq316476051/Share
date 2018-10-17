@@ -1,6 +1,7 @@
 # Share
 
-# Using:
+## 发送分享
+Using:
 ```
 ShareHelper.create(this)
     .setTitle("分享文本...")
@@ -34,3 +35,21 @@ ShareHelper.create(this)
     .setMimeType(ShareHelper.TYPE_FILE)
     .shareFiles(shareUris);
 ```
+
+## 接收分享
+```
+<activity >
+    <intent-filter>
+        // Uri.fromFile()
+    </intent-filter>
+    
+    <intent-filter>
+        // Uri from MediaProvider-database
+    </intent-filter>
+    
+    <intent-filter>
+        // Uri from FileProvider
+    </intent-filter>
+</activity>
+```
+
